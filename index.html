@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Odontológica | OdontoTécnica</title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Odontológica | OdontoTécnica</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-navbar">
+        <a href="/" class="logo-link"
+          ><img src="assets/img/odontologica.jpg" alt="Logo da Odontológica"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="/servicos">Serviços</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <script src="scripts.js"></script>
-</body>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Assistência Técnica Especializada para Equipamentos Odontológicos</h1>
+          <p class="hero-description">Manutenção Preventiva e Corretiva • Instalação Profissional • Suporte Rápido</p>
+          <a href="https://wa.me/51999694766" class="hero-button">Solicitar Orçamento</a>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="list-services">
+          <div class="item-service">
+            <img src="assets/img/preventiva.jpg" alt="Imagem da Manutenção Preventiva">
+            <h3>Manutenção Preventiva</h3>
+            <p>Programas de revisão periódica para garantir o perfeito funcionamento e prolongar a vida útil dos seus equipamentos.</p>
+            <button class="btn-details" data-servico="preventive">Ver Detalhes</button>
+            <div id="preventive-details" class="service-detail ocult">
+              <h4>Detalhes da Manutenção Preventiva</h4>
+              <p>Entre em contato e solicite orçamento sobre contrato de manutenção preventiva e mantenha seus equipamentos sempre em perfeitas condições de uso e funcionamento!</p>
+            </div>
+          </div>
+          <div class="item-service">
+            <img src="assets/img/corretiva.JPG" alt="Imagem da Manutenção Corretiva">
+            <h3>Manutenção Corretiva</h3>
+            <p>Soluções rápidas e eficientes para reparos emergenciais, minimizando o tempo de inatividade da sua clínica.</p>
+            <button class="btn-details" data-servico="corrective">Ver Detalhes</button>
+            <div id="corrective-details" class="service-detail ocult">
+              <h4>Detalhes da Manutenção Corretiva</h4>
+              <p>Entre em contato para agendar o chamado técnico, informe a falha ou defeito e confirme o valor da hora técnica com o responsável!</p>
+            </div>
+            <div class="item-service">
+              <img src="assets/img/instalacao.jpg" alt="Imagem da Instalação de Equipamentos">
+              <h3>Instalação de Equipamentos</h3>
+              <p>Serviço profissional de instalação para equipamentos novos e usados, assegurando a instalação e o funcionamento em perfeitas condições.</p>
+              <button class="btn-details" data-servico="installation">Ver Detalhes</button>
+              <div id="installation-details" class="service-detail ocult">
+                <h4>Detalhes da Instação de Equipamentos</h4>
+                <p>Entre em contato para verificar as datas disponíveis, tempo de instalação, necessidade extras para execuçãoo chamado técnico e confirme os valores com o responsável!</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="about-title">Sobre Nós</h2>
+        <div class="about-content">
+          <p class="about-text">Somos especialistas em assistência técnica para equipamentos odontológicos, comprometidos em oferecer serviços de alta qualidade com agilidade e eficiência. Nossa equipe é formada por técnicos experientes e qualificados para atender às necessidades da sua clínica.</p>
+          <p class="about-text">Priorizamos a manutenção preventiva para garantir a durabilidade dos seus equipamentos e evitar custos inesperados. Em casos de emergência, oferecemos suporte rápido para minimizar qualquer impacto na sua rotina de atendimento.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+      </section>
+
+      <section class="whatsapp-qr-code">
+        <div class="qr-code-content">
+          <h2>Precisando de Assistência?</h2>
+          <h3>Escaneie para chamar pelo WhatsApp:</h3>
+          <div class="qr-code-image">
+            <img src="assets/img/qrcode.png" alt="QR Code WhatsApp">
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Contato Rápido</h3>
+            <p><a href="tel:SEU_TELEFONE">Telefone: SEU_TELEFONE</a></p>
+            <p><a href="mailto:SEU_EMAIL">E-mail: SEU_EMAIL</a></p>
+          </div>
+      
+          <div class="footer-col">
+            <h3>Links Úteis</h3>
+            <ul>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#sobre">Sobre Nós</a></li>
+              <li><a href="#contato">Contato</a></li>
+              </ul>
+          </div>
+      
+          <div class="footer-col">
+            <h3>Redes Sociais</h3>
+            <div class="social-links">
+              <a href="https://www.instagram.com/odontologicaodontotecnica/" target="_blank" rel="noopener noreferrer"><img src="assets/img/instagram.png" alt="Instagram"></a>
+              <a href="https://www.facebook.com/odontologica.tec" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.png" alt="Facebook"></a>
+              <a href="https://wa.me/51998467866" target="_blank" rel="noopener noreferrer"><img src="assets/img/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 - Assistência Técnica Odontológica - Todos os direitos reservados</p>
+          <p>Desenvolvido por Francisco Garroni - <a href="https://wa.me/51999694766" target="_blank" rel="noopener noreferrer"><img src="assets/img/whatsapp.png" alt="WhatsApp"></a>Entre em Contato pelo WhatsApp</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
