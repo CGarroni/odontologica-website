@@ -274,6 +274,10 @@ main {
   min-height: 6.25rem;
 }
 
+.quick-contact {
+  text-decoration: none;
+}
+
 .btn-submit {
   width: 50%;
  margin: 0 auto; 
@@ -291,6 +295,10 @@ main {
 .btn-submit:hover {
  background-color: #000;
   color: #268af5; 
+}
+
+.form-info {
+  text-align: center;
 }
 
 .whatsapp-qr-code {

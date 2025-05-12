@@ -27,7 +27,7 @@
         <div class="hero-content">
           <h1 class="hero-title">Assistência Técnica Especializada para Equipamentos Odontológicos</h1>
           <p class="hero-description">Manutenção Preventiva e Corretiva • Instalação Profissional • Suporte Rápido</p>
-          <a href="https://wa.me/51999694766" class="hero-button">Solicitar Orçamento</a>
+          <a href="https://wa.me/51999694766" class="hero-button" target="_blank">Solicitar Orçamento</a>
         </div>
       </section>
 
@@ -76,20 +76,23 @@
 
       <section id="contact" class="contact">
         <h2>Entre em Contato</h2>
+        <p class="form-info">O formulário de contato estará disponível em breve. Por enquanto, entre em contato pelo Contato Rápido.</p>
         <form action="#" method="POST">
           <div class="form-group">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome" name="nome" required disabled>
           </div>
           <div class="form-group">
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required disabled>
           </div>
           <div class="form-group">
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <textarea id="mensagem" name="mensagem" rows="5" required disabled></textarea>
           </div>
-          <button type="submit" class="btn-submit">Enviar Mensagem</button>
+          <button type="submit" class="btn-submit" disabled>Enviar Mensagem</button>
+          <p class="form-info">Este formulário está temporariamente desativado.</p>
+          <p><a href="#quick-contact" class="quick-contact">Contato Rápido</a></p>
         </form>
       </section>
 
@@ -104,7 +107,7 @@
       </section>
 
       <footer>
-        <div class="footer-container">
+        <div id="quick-contact" class="footer-container">
           <div class="footer-col">
             <h3>Contato Rápido</h3>
             <p><a href="tel:51999694766">Telefone: 51999694766</a></p>
