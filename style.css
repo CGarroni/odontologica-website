@@ -64,7 +64,7 @@ main {
 }
 
 .hero-content {
-  max-width: 50rem;
+  max-width: 90%;
 }
 
 .hero-title {
@@ -171,18 +171,6 @@ main {
 
 .ocult {
   display: none;
-}
-
-@media(max-width: 768px) {
-  .item-service {
-    width: calc(50% - 1.25rem);
-  }
-}
-
-@media(max-width: 480px) {
-  .item-service {
-    width: 100%;
-  }
 }
 
 #about {
@@ -426,4 +414,131 @@ footer {
 
 .footer-col:nth-child(3) .social-links {
   justify-content: flex-end;
+}
+
+@media(max-width: 768px) {
+  nav ul {
+    margin-left: auto;
+  }
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  main {
+    padding-top: 4rem;
+  }
+  .item-service {
+    width: calc(50% - .8rem);
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-col {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    text-align: center !important;
+  }
+  .footer-col:last-child {
+    text-align: center !important;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 480px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    align-items: flex-start;
+    padding: 1rem;
+    display: none;
+  }
+  header {
+    padding: .6rem;
+  }
+  main {
+    padding-top: 3.2rem;
+  }
+  .container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-link img {
+    height: 2.3rem;
+  }
+  nav ul.active {
+    display: flex !important;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: .8rem;
+  }
+  .item-service {
+    width: 100%;
+  }
+  .hero {
+    padding: 1rem;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-description {
+    font-size: .9rem;
+  }
+  .hero-button {
+    font-size: .9rem;
+    padding: .4rem .8rem;
+  }
+  #services h2 {
+    font-size: 1.4rem;
+  }
+  #about h2 {
+    font-size: 1.4rem;
+  }
+  #about .about-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  #contact h2 {
+    font-size: 1.4rem;
+  }
+  .form-group label {
+    margin-left: 0;
+    text-align: left;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea,
+  .btn-submit {
+    width: 100%;
+  }
+  .btn-submit {
+    font-size: 1rem;
+    padding: .7rem;
+  }
+  .whatsapp-qr-code {
+    padding: 2rem .8rem;
+  }
+  .qr-code-content h2 {
+    font-size: 1.4rem;
+  }
+  .qr-code-content h3 {
+    font-size: 1rem;
+  }
+  .qr-code-image img {
+    max-width: 10rem;
+  }
+  .social-links {
+    justify-content: center !important;
+  }
+  footer {
+    padding: 1.5rem;
+  }
 }
