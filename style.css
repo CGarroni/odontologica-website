@@ -416,6 +416,23 @@ footer {
   justify-content: flex-end;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
 @media(max-width: 768px) {
   nav ul {
     margin-left: auto;
@@ -447,8 +464,11 @@ footer {
 }
 
 @media(max-width: 480px) {
-  nav ul {
+  .menu-toggle {
     display: flex;
+  }
+  nav ul {
+    display: none;
     flex-direction: column;
     background-color: #333;
     position: absolute;
@@ -457,7 +477,8 @@ footer {
     width: 100%;
     align-items: flex-start;
     padding: 1rem;
-    display: none;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   header {
     padding: .6rem;
@@ -479,6 +500,12 @@ footer {
   nav ul li {
     margin-left: 0;
     margin-bottom: .8rem;
+    width: 100%;
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    width: 100%;
   }
   .item-service {
     width: 100%;
