@@ -394,9 +394,17 @@ footer {
   text-decoration: underline;
 }
 
+.footer-bottom p {
+  font-size: 1rem;
+}
+
+.footer-bottom .my-contact {
+  font-size: .8rem;
+}
+
 .footer-bottom img {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
 }
 
 
