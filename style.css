@@ -424,6 +424,10 @@ footer {
   justify-content: flex-end;
 }
 
+.my-contact a {
+  text-decoration: none;
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
